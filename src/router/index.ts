@@ -76,7 +76,7 @@ export const routes: RouteRecordRaw[] = [
         redirect: '/cachetest/cache',
         component: Desk,
         meta: {
-            title: '缓存测试'
+            title: '路由缓存测试'
         },
         children: [
             {
@@ -93,6 +93,23 @@ export const routes: RouteRecordRaw[] = [
                 component: () => import('@/views/cache/nocache.vue'),
                 meta: {
                     title: '未缓存',
+                    keepAlive: false,
+                },
+            },
+            {
+                path: 'storecache',
+                name: 'storecache',
+                component: () => import('@/views/cache/storecache.vue'),
+                meta: {
+                    title: 'pinia已缓存'
+                },
+            },
+            {
+                path: 'storenocache',
+                name: 'storenocache',
+                component: () => import('@/views/cache/storenocache.vue'),
+                meta: {
+                    title: 'pinia未缓存',
                     keepAlive: false,
                 },
             },
