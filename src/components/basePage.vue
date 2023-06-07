@@ -15,12 +15,15 @@
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-    name: 'basePage',
-})
+<script setup lang="ts">
+defineSlots<{
+    /** 表单部分 */
+    form: any;
+    /** 右上方扩展按钮区域 */
+    extra: any;
+    /** 默认区域一般是表格部分 */
+    default: any
+}>()
 </script>
 
 <style scoped lang="less">
