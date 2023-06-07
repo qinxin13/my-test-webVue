@@ -84,6 +84,11 @@ export default function request<T = any>(urlOrOpt: string | (FetchOpt & { url: s
         console.error("Fetch Error : %s", response.statusText);
         return {};
     }).catch(() => {
+        if (navigator.onLine === false) {
+            Message.error('当前网络似乎已经断开！');
+        } else {
+            Message.error('服务器繁忙请稍后再试！');
+        }
         showLoading && hideLoading();
         return {};
     })
