@@ -65,10 +65,6 @@ export default defineConfig({
             return 'vue';
           }
 
-          if (/node_modules\/element-plus\//.test(id)) {
-            return 'elementui';
-          }
-
           if (/node_modules/.test(id)) {
             return 'vendor';
           }
