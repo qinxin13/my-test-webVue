@@ -1,6 +1,6 @@
 import { ElMessage as Message, ElLoading } from "element-plus";
 
-const baseUrl = '';
+const baseUrl = 'http://testbuild.youedata.cc/zcpgqg/assetmainserver/homePage';
 type Method = 'GET' | 'POST' | 'HEAD' | 'DELETE' | 'PUT' | 'OPTIONS' | 'TRACE' | 'CONNECT';
 
 type FetchOpt = RequestInit & {
@@ -21,7 +21,7 @@ const fetchDefault: RequestInit & {
         token?: string | null,
     }
 } = {
-    method: 'GET',
+    method: 'POST',
     headers: {
         "Content-Type": "application/json; charset=utf-8"
     }
@@ -49,7 +49,9 @@ export default function request<T = any>(url: string, opt?: FetchOpt): Promise<R
 export default function request<T = any>(urlOrOpt: string | (FetchOpt & { url: string }), fetchOpt: FetchOpt = {}): Promise<Result<T>> {
     let url = typeof urlOrOpt === 'string' ? urlOrOpt : urlOrOpt.url;
     const opt: (FetchOpt & { url?: string }) = typeof urlOrOpt === 'string' ? fetchOpt : urlOrOpt;
-    url = baseUrl + url;
+    if (!/^http/.test(url)) {
+        url = baseUrl + url;
+    }
     // eslint-disable-next-line
     const { params, data, showLoading = true, loadingTip, headers, url: deleteUrl, ...props } = opt;
     const options = Object.assign({}, fetchDefault, props);

@@ -19,7 +19,7 @@ export const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'home',
-        redirect: '/desk/main',
+        redirect: '/test',
         meta: {
             hiddenNav: true
         }
@@ -141,6 +141,82 @@ export const routes: RouteRecordRaw[] = [
                 },
             },
         ]
+    },
+    {
+        path: '/test',
+        name: 'test',
+        redirect: '/test/mymenu',
+        component: Desk,
+        meta: {
+            title: '我的菜单'
+        },
+        children: [
+            {
+                path: 'mymenu',
+                name: 'mymenu',
+                component: () => import('@/views/test/menu.vue'),
+                meta: {
+                    title: '自定义'
+                },
+            },
+            {
+                path: 'parent',
+                name: 'parent',
+                component: () => import('@/views/envent/parent.vue'),
+                meta: {
+                    title: '父子组件',
+                    keepAlive: false,
+                },
+            },
+            {
+                path: 'pageInite',
+                name: 'pageInite',
+                component: () => import('@/views/test/pageInite.vue'),
+                meta: {
+                    title: '页面初始化',
+                    keepAlive: false,
+                },
+            },
+            {
+                path: 'imgChange',
+                name: 'imgChange',
+                component: () => import('@/views/test/imgChange.vue'),
+                meta: {
+                    title: '网页轮播',
+                    keepAlive: false,
+                },
+            },
+            {
+                path: 'imgPlay',
+                name: 'imgPlay',
+                component: () => import('@/views/test/imgPlay.vue'),
+                meta: {
+                    title: '网页轮播2',
+                    keepAlive: false,
+                },
+            },
+            {
+                path: 'login',
+                name: 'login',
+                component: () => import('@/views/test/login.vue'),
+                meta: {
+                    title: '企业/机构信息（暂时只支持境内注册的企业或境内的组织入驻）',
+                    keepAlive: false,
+                },
+            },
+
+        ]
+    },
+    {
+        path: '/index',
+        name: 'index',
+        // redirect: '/sever/severLogin',
+        component: () => import('@/views/sever/index.vue'),
+        meta: {
+            title: '首页',
+            keepAlive: false,
+
+        },
     },
     {
         path: '/404',
