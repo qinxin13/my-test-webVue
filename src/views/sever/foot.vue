@@ -11,13 +11,13 @@
 </script>
 <style lang="less" scoped>
 #footer {
-    width: 1920px;
+    /* width: 1920px; */
     height: 328px;
     background: #051227;
     .first {
         width: 1521px;
         height: 310px;
-        margin: 4px 0 0 213px;
+        margin: 4px auto;
     }
 }
 </style>

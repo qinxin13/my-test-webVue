@@ -42,8 +42,8 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
 <style lang="less" scoped>
 #ecologySever {
     position: relative;
-    width: 1920px;
-    height: 610px;
+    /* width: 1920px; */
+    height: 444px;
     background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
@@ -95,8 +95,8 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             width: 1264px;
             height: 64px;
             background: #1953C5;
-            // :deep(.el-tabs__item) {
-            // }
+            /* // :deep(.el-tabs__item) { */
+            /* // } */
             width: 1264px;
             height: 64px;
             border: none;
@@ -151,7 +151,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             }
 
             .itemcontent {
-                // width: 664px;
+                /* // width: 664px; */
                 height: 84px;
                 font-size: 16px;
                 font-weight: 300;

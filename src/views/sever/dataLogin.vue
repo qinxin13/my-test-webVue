@@ -210,19 +210,15 @@
     </div>
 </template>
 <script setup lang="ts">
-import { defineComponent } from 'vue';
-// export default defineComponent({
-//     name: 'dataLogin',
-// })
 
 </script>
 <style lang="less" scoped>
 #mainLogin {
     position: relative;
-    width: 1912px;
+    /* <!-- width: 1912px; --> */
     height: 678px;
     background: #ffffff;
-    margin: 383px 8px 0 0;
+    margin: 16px 8px 0 0;
 
     .top {
         width: 192px;
@@ -248,7 +244,7 @@ import { defineComponent } from 'vue';
     .loop {
         width: 1264px;
         height: 40px;
-        // margin: 28px 0 0 320px;
+        /* // margin: 28px 0 0 320px; */
 
         display: flex;
         flex-direction: row;
@@ -286,7 +282,7 @@ import { defineComponent } from 'vue';
             }
 
             .second {
-                // width: 745px;
+                /* // width: 745px; */
                 height: 22px;
                 overflow-wrap: break-word;
                 color: rgba(37, 43, 58, 1);
@@ -318,7 +314,7 @@ import { defineComponent } from 'vue';
             }
 
             >img {
-                // margin-left:10px ;
+                /* // margin-left:10px ; */
                 width: 16px;
                 height: 16px;
 
@@ -349,7 +345,7 @@ import { defineComponent } from 'vue';
         width: 1288px;
         height: 468px;
         flex-wrap: wrap;
-        margin: 16px 0 40px 320px;
+        margin: 16px auto ;
 
         .bottomItem {
             position: relative;
@@ -402,7 +398,7 @@ import { defineComponent } from 'vue';
                     height: 22px;
                     background: rgba(33, 58, 199, 0.1);
                     border-radius: 4px;
-                    // opacity:0.1;
+                    /* // opacity:0.1; */
                     font-size: 16px;
                     color: #1953C5;
                     margin-right: 10px;
@@ -411,7 +407,7 @@ import { defineComponent } from 'vue';
                 }
             }
             .imgTab {
-                // width: 204px;
+                /* // width: 204px; */
                 height: 24px;
                 margin: 16px 0 16px 0;
             }

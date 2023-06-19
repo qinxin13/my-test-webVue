@@ -135,11 +135,12 @@
 <style lang="less" scoped>
 #severInstitution {
     position: relative;
-    width: 1920px;
+    /* width: 1920px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 16px auto;
+    width: 1264px;
     .top {
         width: 100%;
         height: 40px;
@@ -166,7 +167,7 @@
         margin-top: 21px;
         display: flex;
         flex-direction: row;
-        // align-items: center;
+        /* // align-items: center; */
         text-align: center;
 
         .midFirst {
@@ -228,10 +229,11 @@
     }
 
     .midItems {
+        
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 24px 307px 0 328px;
+        
         position: relative;
         flex-wrap: wrap;
 
@@ -243,7 +245,7 @@
             border-radius: 8px;
             background: #ffffff;
             box-shadow: 0 0 20px 0 rgba(18, 21, 39, 0.1);
-            margin-right: 21px;
+            margin: 24px  80px 0 0;
             display: flex;
             flex-direction: column;
             align-items: left;
@@ -302,8 +304,8 @@
         }
 
         .botIcon {
-            margin: 4px 223px 0 312px;
-            // margin-top: 20px;
+            /* margin: 4px 223px 0 312px; */
+            /* // margin-top: 20px; */
             display: flex;
             flex-direction: row;
             position: relative;
@@ -315,7 +317,7 @@
                 float: left;
                 width: 186px;
                 height: 54px;
-                margin: 24px 91px 0 0;
+                margin: 24px 66px 0 0;
                 text-align: center;
                 >img {}
             }

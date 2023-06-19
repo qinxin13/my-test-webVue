@@ -76,10 +76,10 @@
 <style lang="less" scoped>
 #severArea {
     position: relative;
-    width: 1920px;
+    /* width: 1920px; */
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    /* // align-items: center; */
 
     .top {
         width: 100%;
@@ -105,7 +105,7 @@
 
     .bottom {
         margin-top: 28px;
-        margin: 28px 0 0 330px;
+        margin: 28px auto;
         display: flex;
         flex-direction: row;
 
@@ -116,7 +116,7 @@
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            // align-items: left;
+            /* // align-items: left; */
             margin-right: 30px;
 
             .bfirst {
@@ -134,7 +134,7 @@
                 vertical-align: middle;
                 display: flex;
                 flex-direction: row;
-                // align-items: center;
+                /* // align-items: center; */
                 margin: 19px 0 16px 24px;
 
                 >div {

@@ -54,15 +54,15 @@
 <style lang="less" scoped>
 #node {
     position: relative;
-    width: 1920px;
+    /* width: 1920px; */
     height: 830px;
     background: #F5F7FA;
     display: flex;
     flex-direction: column;
 
-    // align-items: center;
+    /* // align-items: center; */
     .top {
-        width: 100%;
+        /* width: 100%; */
         height: 40px;
         color: #121527;
         font-size: 32px;
@@ -73,7 +73,7 @@
     }
 
     .middle {
-        // width: 100%;
+        /* // width: 100%; */
         height: 26px;
         color: #252B3A;
         font-size: 18px;
@@ -84,7 +84,7 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        margin-left: 707px;
+        margin:0 auto;
 
         .item {
             margin: 16px 42px 0 0;
@@ -102,7 +102,7 @@
         height: 640px;
         color: #ffffff;
         border-radius: 8px;
-        margin: 28px 0 0 328px;
+        margin: 28px auto;
         display: flex;
         flex-direction: row;
         align-items: center;

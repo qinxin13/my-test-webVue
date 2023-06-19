@@ -124,29 +124,31 @@ export default defineComponent({
 </script>
 <style lang="less" scoped>
 #top {
-  width: 1920px;
-  height: 556px;
+  /* width: 1920px; */
+  /* height: 556px; */
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 
   #banner {
-    width: 1920px;
+    /* width: 1920px; */
     height: 64px;
     background: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    vertical-align: middle;
+
 
     .banner-left {
-      // position: absolute;
+      /* position: absolute; */
       display: flex;
       flex-direction: row;
       text-align: center;
 
       .left-imgItem {
-        // position: absolute;
+        /* // position: absolute; */
         width: 251px;
         height: 40px;
         margin: 12px 0 12px 40px;
@@ -217,10 +219,12 @@ export default defineComponent({
     height: 342px;
     border: 1px solid rgba(151, 151, 151, 1);
     position: relative;
+    margin: 0 auto;
 
     .block.text-center {
       text-align: center;
       vertical-align: middle;
+      /* margin: 0 auto; */
 
       .el-carousel__item:nth-child(2n) {
         background-color: #99a9bf;
@@ -247,8 +251,8 @@ export default defineComponent({
       height: 50px;
       display: flex;
       flex-direction: row;
-      // align-items: center;
-      margin: 143px 522px 149px 438px;
+      /* // align-items: center; */
+      margin: 132px 437px 149px 217px;
       position: absolute;
       top: 0;
       left: 0;
@@ -256,7 +260,7 @@ export default defineComponent({
     
       :deep(.el-select) {
         display: inline-block;
-        margin: 0;
+        margin: 0 auto;
         color: #121527;
         border: 0;
 
@@ -305,6 +309,7 @@ export default defineComponent({
     flex-direction: row;
     align-items: center;
     color: #121527;
+    margin: 0 auto;
 
     .severItem {
       width: 224px;
